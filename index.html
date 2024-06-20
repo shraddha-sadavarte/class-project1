@@ -4,64 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Class project 1</title>
+    <link rel="stylesheet" href="./style.css">  
 </head>
 <body>
     <center>
-    <header>
-        <h1>Welcome to my world</h1>
+    <header class="heading">
+        <h1>Welcome to my world!</h1>
         <p>This is shraddha, a frontend developer...</p>
     </header>
-    <hr>
 
-    <section>
+    <section class="about">
         <h2>About Me</h2>
         <p>Hello, I am shraddha and here is a little info about me..!</p>
-        <img src="./photo self.jpeg" height="200px" width="150px">
+        <img src="./images/photo self.jpeg" >
     </section>
     <hr>
 
-    <section>
+    <section class="contactInfo">
         <h2>Contact Information</h2>
         <p>Let's Connect!</p>
-        <p>
-            <a href="mailto:shraddhasadavarte24@gmail.com">Send me an email</a> | 
-            <a href="https://www.linkedin.com/feed/">LinkedIn</a>
+        <p class="icon">
+            <a href="mailto:shraddhasadavarte24@gmail.com"><img src="./images/email.png" ></a> 
+            <a href="https://www.linkedin.com/feed/"><img src="./images/linkedin.png" height="50px" width="50px"></a>
         </p>
     </section>
     <hr>
 
-    <section>
+    <section class="skills">
         <h2>My Skills</h2>
-        <table>
-            <tr>
-                <td>
-                    <ul style="text-align: left;">
-                        <li>Java</li>
-                        <li>Frontend Languages</li>
-                        <li>Springboot</li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
+        <div class="list">
+        <div>Java</div>
+        <div>Springboot</div>
+        <div>Frontend Languages</div>
+        </div>
     </section>
     <hr>
 
-    <section>
+    <section class="contact">
         <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name: </label>
-            <input type="text" id="name" name="name"><br><br>
+        <form class="form">
+            <div style="text-align: left;">
+            <label for="name">Name: </label><br>
+            <input type="text" id="name" name="name" class="inpt"><br><br>
 
-            <label for="email">Email: </label>
-            <input type="email" id="email" name="email"><br><br>
+            <label for="email">Email: </label><br>
+            <input type="email" id="email" name="email" class="inpt"><br><br>
 
-            <label for="msg">Message: </label>
-            <textarea id="msg" name="msg"></textarea><br><br>
+            <label for="msg">Message: </label><br>
+            <textarea id="msg" name="msg" class="inpt"></textarea><br><br>
 
-            <button type="submit">Submit</button>
+            <button type="submit" class="btn">Submit</button>
+            </div>
         </form>
     </section>
-    <hr>
 
     <footer>&copy; 2024 shraddha</footer>
     </center>
