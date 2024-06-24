@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing ball</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ball{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: blueviolet;
+            animation: bouncingball 0.5s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes bouncingball{
+            from{
+                transform: translate3d(0, 0, 0);
+            }
+            to{
+                transform: translate3d(0, 200px, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ball"></div>
+</body>
+</html>
