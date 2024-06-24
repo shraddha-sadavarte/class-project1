@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM MANIPULATION</title>
+</head>
+<body>
+    <h2 class="heading">Hii, I am shraddha</h2>
+    <p id="para">I am currently pursuing engineering in third year</p>
+    <p class="content">This is some content</p>
+</body>
+
+<script>
+
+    //selecting elements
+    const head = document.querySelector('.heading');
+    const paragraph = document.getElementById('para');
+    const contentpara = document.querySelectorAll('.content');
+
+    //modifying elements
+    head.style.backgroundColor = 'lightpink';
+    paragraph.textContent = 'This text is changed by DOM Manipulation';
+    contentpara.forEach(paragraph => {
+        paragraph.style.fontStyle = 'italic';
+    });
+</script>
+</html>
