@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js basic</title>
+</head>
+<body>
+    <script>
+        let a=5;
+        a++;
+        console.log(a); //answer will be 6
+
+        let b=10;
+        b--;
+        console.log(b); //ans will be 9
+
+        let c=7;
+        let d=++c;
+        console.log(c); //ans will be 8
+        console.log(d); //ans will be 8
+
+        let guests=15;
+        let availableseats=10;
+
+        if(guests<=availableseats){
+            console.log("Aapke liye restaurant mein jagah hain!");
+        }
+        else{
+            console.log("Sorry! Seats are not available in restaurant...")
+        }
+
+        var number=10;
+        if(number%5 == 0){
+            console.log("Number is complitely divide by 5");
+        }
+        else{
+            console.log("number cannot complitely divide by 5")
+        }
+
+        //password checker
+        let password = "password123!" ;
+
+
+    //password ki length dekhege
+    if(password.length >= 8){
+        console.log("password ki length thik hai");
+    }
+
+    //password mai ek capital letter hona chaiye 
+    if(/[A-Z]/.test(password)){
+        console.log("password mai capital letter hai" );
+    }
+
+    //password mai ek small letter hona chaiye 
+    if(/[a-z]/.test(password)){
+        console.log("password mai small letter hai" );
+    }
+
+    //password mai ek number  hona chaiye 
+    if(/[0-9]/.test(password)){
+        console.log("password mai number hai" );
+    }
+
+    if(/[!-*]/.test(password)){
+        console.log("password mein special character hain")
+    }
+    </script>
+</body>
+</html>
